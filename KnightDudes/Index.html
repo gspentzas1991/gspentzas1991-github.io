@@ -1,0 +1,35 @@
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Knight Dudes</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Knight Dudes.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body class="template">
+  <div id="header">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/projects">Portofolio</a></li>
+			<li style="padding-left:50px"><a href="https://github.com/gspentzas1991" style="padding-left: 30px;">GitHub</a></li>
+		</ul>
+	</div>
+  <h1 style=" margin-left: 45px; margin-bottom: -25px; font-family: 'Helvetica, sans-serif'; "> Knight Dudes</h1><br>
+  <p style=" margin-left: 45px; margin-bottom: -15px; "> A top down turn bases strategy game that showcases pathfinding and AI </p><br>
+		
+    <div class="webgl-content"style="/* top: 550px; */margin-top: -100px ; margin-left:150px;  position: absolute;  top: 680; left:520 ">
+      
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Knight Dudes</div>
+      </div>
+    </div>
+  </body>
+</html>
